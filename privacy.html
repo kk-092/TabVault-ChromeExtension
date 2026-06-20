@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TabVault privacy policy: local-first tab and session management with no tracking, analytics, advertising, or cloud account.">
+    <meta name="color-scheme" content="light dark">
+    <title>Privacy Policy | TabVault</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --page: #f4f7fa;
+        --panel: #ffffff;
+        --soft: #edf6fc;
+        --ink: #122033;
+        --muted: #56697f;
+        --line: #d6e0e9;
+        --accent: #087fc5;
+        --accent-dark: #05699f;
+        --success: #147a57;
+        --shadow: 0 12px 30px rgba(24, 48, 74, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--accent-dark);
+      }
+
+      a:focus-visible {
+        outline: 3px solid rgba(8, 127, 197, 0.3);
+        outline-offset: 3px;
+      }
+
+      .site-header {
+        border-bottom: 1px solid var(--line);
+        background: var(--panel);
+      }
+
+      .header-inner,
+      .hero-inner,
+      .page-layout,
+      .footer-inner {
+        width: min(1120px, calc(100% - 40px));
+        margin-inline: auto;
+      }
+
+      .header-inner {
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--ink);
+        font-size: 18px;
+        font-weight: 750;
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        border-radius: 8px;
+        background: var(--accent);
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 800;
+        box-shadow: 0 6px 16px rgba(8, 127, 197, 0.22);
+      }
+
+      .header-label {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .hero {
+        background: var(--panel);
+      }
+
+      .hero-inner {
+        padding-block: 66px 58px;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: var(--accent-dark);
+        font-size: 13px;
+        font-weight: 750;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0;
+        font-size: clamp(38px, 6vw, 62px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .hero-copy {
+        max-width: 720px;
+        margin: 20px 0 0;
+        color: var(--muted);
+        font-size: 19px;
+      }
+
+      .trust-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 30px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .trust-list li {
+        padding: 8px 12px;
+        border: 1px solid #bcd9cc;
+        border-radius: 6px;
+        background: #edf8f3;
+        color: var(--success);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .effective-date {
+        margin: 28px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .page-layout {
+        display: grid;
+        grid-template-columns: 230px minmax(0, 1fr);
+        gap: 52px;
+        padding-block: 52px 72px;
+      }
+
+      .contents {
+        position: sticky;
+        top: 24px;
+        align-self: start;
+      }
+
+      .contents strong {
+        display: block;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--accent);
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+
+      .contents nav {
+        display: grid;
+        gap: 3px;
+        margin-top: 10px;
+      }
+
+      .contents a {
+        padding: 7px 8px;
+        border-radius: 5px;
+        color: var(--muted);
+        font-size: 14px;
+        text-decoration: none;
+      }
+
+      .contents a:hover {
+        background: var(--soft);
+        color: var(--accent-dark);
+      }
+
+      .policy {
+        min-width: 0;
+      }
+
+      .summary {
+        margin-bottom: 42px;
+        padding: 24px;
+        border: 1px solid #b8d8ec;
+        border-left: 4px solid var(--accent);
+        border-radius: 8px;
+        background: var(--soft);
+        box-shadow: var(--shadow);
+      }
+
+      .summary strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 18px;
+      }
+
+      .summary p {
+        margin: 0;
+      }
+
+      section {
+        scroll-margin-top: 24px;
+        padding-block: 32px;
+        border-top: 1px solid var(--line);
+      }
+
+      section:first-of-type {
+        border-top: 0;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 25px;
+        line-height: 1.25;
+      }
+
+      h3 {
+        margin: 24px 0 6px;
+        font-size: 17px;
+      }
+
+      p {
+        margin: 0 0 14px;
+      }
+
+      ul {
+        margin: 12px 0 0;
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 7px;
+      }
+
+      .data-table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+
+      .data-table th,
+      .data-table td {
+        padding: 14px 16px;
+        border: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .data-table th {
+        width: 31%;
+        background: var(--soft);
+        font-size: 14px;
+      }
+
+      .plain-facts {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .fact {
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        background: var(--panel);
+      }
+
+      .fact strong {
+        display: block;
+        margin-bottom: 3px;
+        color: var(--accent-dark);
+      }
+
+      .fact span {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .site-footer {
+        border-top: 1px solid var(--line);
+        background: var(--panel);
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding-block: 26px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark;
+          --page: #0d1520;
+          --panel: #141f2c;
+          --soft: #172b3b;
+          --ink: #eef5fb;
+          --muted: #a8b8c8;
+          --line: #2b3b4c;
+          --accent: #36a9e8;
+          --accent-dark: #69c2f0;
+          --success: #7ed9b5;
+          --shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
+        }
+
+        .trust-list li {
+          border-color: #285f4d;
+          background: #142f29;
+        }
+
+        .summary {
+          border-color: #2d657f;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .header-inner,
+        .hero-inner,
+        .page-layout,
+        .footer-inner {
+          width: min(100% - 28px, 680px);
+        }
+
+        .header-label {
+          display: none;
+        }
+
+        .hero-inner {
+          padding-block: 46px 42px;
+        }
+
+        .hero-copy {
+          font-size: 17px;
+        }
+
+        .page-layout {
+          grid-template-columns: 1fr;
+          gap: 28px;
+          padding-block: 34px 52px;
+        }
+
+        .contents {
+          position: static;
+        }
+
+        .contents nav {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .data-table,
+        .data-table tbody,
+        .data-table tr,
+        .data-table th,
+        .data-table td {
+          display: block;
+          width: 100%;
+        }
+
+        .data-table tr + tr {
+          border-top: 8px solid var(--page);
+        }
+
+        .data-table th {
+          border-bottom: 0;
+        }
+
+        .plain-facts {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-inner {
+          display: grid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="TabVault privacy policy">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span>TabVault</span>
+        </a>
+        <span class="header-label">Privacy Policy</span>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">Privacy by design</p>
+          <h1>Your browser work stays under your control.</h1>
+          <p class="hero-copy">TabVault is a local-first tab and session manager. It does not require an account and does not send your saved browsing data to the developer or advertising services.</p>
+          <ul class="trust-list" aria-label="Privacy highlights">
+            <li>No tracking</li>
+            <li>No analytics</li>
+            <li>No advertising</li>
+            <li>No cloud account</li>
+            <li>No data sale</li>
+          </ul>
+          <p class="effective-date"><strong>Effective date:</strong> June 20, 2026</p>
+        </div>
+      </div>
+
+      <div class="page-layout">
+        <aside class="contents" aria-label="Policy contents">
+          <strong>Contents</strong>
+          <nav>
+            <a href="#overview">Overview</a>
+            <a href="#data">Data handled</a>
+            <a href="#storage">Storage and deletion</a>
+            <a href="#security">Passwords and encryption</a>
+            <a href="#permissions">Permissions</a>
+            <a href="#sharing">Sharing and limited use</a>
+            <a href="#changes">Policy changes</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </aside>
+
+        <article class="policy">
+          <div class="summary">
+            <strong>Plain-language summary</strong>
+            <p>TabVault processes tab and session information only to provide the features you request. Normal extension data stays in browser-owned local storage. The developer cannot view it.</p>
+          </div>
+
+          <section id="overview">
+            <h2>1. Overview</h2>
+            <p>This Privacy Policy explains how the TabVault browser extension handles information when you save tabs, organize sessions, search bookmarks, recover browser work, or create backups.</p>
+            <div class="plain-facts">
+              <div class="fact">
+                <strong>Collection</strong>
+                <span>Only the browser information required for TabVault features.</span>
+              </div>
+              <div class="fact">
+                <strong>Processing</strong>
+                <span>Performed locally inside your browser.</span>
+              </div>
+              <div class="fact">
+                <strong>Transmission</strong>
+                <span>No automatic transmission to the developer or third parties.</span>
+              </div>
+              <div class="fact">
+                <strong>Control</strong>
+                <span>Delete sessions or all TabVault data from the extension settings.</span>
+              </div>
+            </div>
+          </section>
+
+          <section id="data">
+            <h2>2. Information TabVault handles</h2>
+            <p>Depending on the features you use, TabVault may process the following information:</p>
+            <table class="data-table">
+              <tbody>
+                <tr>
+                  <th scope="row">Open tabs</th>
+                  <td>Tab titles, URLs, window membership, pinned state, and supported tab-group metadata.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Saved workspaces</th>
+                  <td>Names, notes, tags, folders, colors, icons, saved links, and workspace preferences you create.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Recovery information</th>
+                  <td>Recently closed browser sessions and local snapshots used for recovery features.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bookmarks</th>
+                  <td>Bookmark titles, URLs, and folder structure when you search, import, or export bookmarks.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Security metadata</th>
+                  <td>Salted verification hashes for an optional interface password and recovery key. Plain-text interface passwords and recovery keys are not stored.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>TabVault does not read webpage bodies, form fields, cookies, messages, financial details, health information, or precise location.</p>
+          </section>
+
+          <section id="storage">
+            <h2>3. Local storage, retention, and deletion</h2>
+            <p>Saved sessions, collections, notes, tags, backups, settings, password-verification metadata, and automatic recovery snapshots are stored in extension-owned browser storage. IndexedDB is the primary local vault.</p>
+            <p>Information remains on your device until you delete it, uninstall the extension, or clear its browser storage. TabVault provides controls to:</p>
+            <ul>
+              <li>Delete individual saved workspaces.</li>
+              <li>Clear saved sessions while retaining available recovery backups.</li>
+              <li>Delete recovery history and backups.</li>
+              <li>Permanently delete all TabVault data and settings.</li>
+            </ul>
+            <p>Exported files are saved wherever you choose and remain under your control after download.</p>
+          </section>
+
+          <section id="security">
+            <h2>4. Passwords and encryption</h2>
+            <h3>Interface password</h3>
+            <p>The optional vault password restricts access to TabVault interfaces. It does not encrypt the normal local IndexedDB database at rest. TabVault stores a salted password-verification hash rather than the plain-text password.</p>
+            <h3>Recovery key</h3>
+            <p>A one-time recovery key can reset the interface password. Only a salted verification hash of this key is retained. TabVault cannot display a lost recovery key again.</p>
+            <h3>Encrypted portable backups</h3>
+            <p>Password-protected backup files are encrypted locally using PBKDF2-SHA256 key derivation and AES-GCM encryption before download. Backup passwords are not stored and cannot be recovered by TabVault.</p>
+          </section>
+
+          <section id="permissions">
+            <h2>5. Browser permissions</h2>
+            <p>TabVault requests permissions only for its user-facing session-management features:</p>
+            <table class="data-table">
+              <tbody>
+                <tr>
+                  <th scope="row">Tabs and tab groups</th>
+                  <td>Save, search, organize, close, and restore tabs while preserving supported group information.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Storage</th>
+                  <td>Keep settings and extension data locally.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sessions</th>
+                  <td>Show and restore recently closed tabs and windows.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bookmarks</th>
+                  <td>Search bookmarks and perform user-requested bookmark import or export actions.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Alarms</th>
+                  <td>Schedule local recovery snapshots and snooze reminders.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Side panel</th>
+                  <td>Provide the optional compact TabVault side panel.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Favicons</th>
+                  <td>Display recognizable website icons beside saved links using the browser's built-in favicon service.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>TabVault does not request broad website host permissions.</p>
+          </section>
+
+          <section id="sharing">
+            <h2>6. Data sharing and limited use</h2>
+            <p>TabVault does not sell user data or transfer it to data brokers or other third parties. It does not use browser data for advertising, credit decisions, personalized recommendations, or purposes unrelated to its stated tab and session-management functionality.</p>
+            <p>The extension does not include analytics, tracking, AI services, a cloud account, an external database, or a backend server. The developer and other humans do not have access to data stored locally by TabVault.</p>
+            <p>Information leaves the extension only when you deliberately create an export or backup file. TabVault does not automatically upload those files.</p>
+          </section>
+
+          <section id="changes">
+            <h2>7. Changes to this policy</h2>
+            <p>This policy may be updated when TabVault's features or legal requirements change. Material changes will be reflected on this page with a revised effective date.</p>
+          </section>
+
+          <section id="contact">
+            <h2>8. Contact</h2>
+            <p>For privacy questions or support, contact the developer through the support channel shown on the TabVault Chrome Web Store listing.</p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>TabVault Privacy Policy</span>
+        <span>Local-first browser session management</span>
+      </div>
+    </footer>
+  </body>
+</html>
